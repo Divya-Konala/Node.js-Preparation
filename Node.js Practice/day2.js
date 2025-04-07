@@ -65,7 +65,7 @@ const fs = require("fs");
 const newFile = fs.open("test.txt", "w", function (err, file) {
   if (err) throw err;              // If there's an error, throw it
   console.log("saved!");           // If successful, print "saved!"
-  fs.writeFileSync("test.txt", "Trying to write..."); //initial writing. It will not allow to write afterwards
+  fs.writeFileSync(file, "Trying to write..."); //initial writing. It will not allow to write afterwards
 });
 
 // ✅ Write content into 'test.txt' using fs.writeFileSync()

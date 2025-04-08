@@ -1,1 +1,0 @@
-Write line2added from appendFileSyncextra line added from appendFile

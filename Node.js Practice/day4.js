@@ -14,7 +14,7 @@ const server = http.createServer(async(req, res)=>{
                 </div>
                 <div><h3>${item.title}</h3></div>
                 <div>Price: $${item.price}</div>
-                <div>Rating : ${item.rating.rate}></div>
+                <div>Rating : ${item.rating.rate}</div>
             </div>`
         )).join("");
         res.writeHead(200, {'content-type': 'text/html'});

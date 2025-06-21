@@ -4,14 +4,19 @@
   "description": "learning graphQL",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server:json": "json-server --watch db.json",
+    "dev": "nodemon server.js"
   },
   "author": "Divya",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.10.0",
     "express": "^5.1.0",
     "express-graphql": "^0.12.0",
     "graphql": "^15.10.1",
-    "lodash": "^4.17.21"
+    "json-server": "^1.0.0-beta.3",
+    "lodash": "^4.17.21",
+    "nodemon": "^3.1.10"
   }
 }
